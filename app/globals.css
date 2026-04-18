@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Brand Colors */
+  --color-brand-burgundy: #7B2048;
+  --color-brand-burgundy-dark: #5C1735;
+  --color-brand-burgundy-light: #9B3560;
+  --color-brand-blush: #F5EDF1;
+  --color-brand-rose: #C9A8B6;
+  --color-brand-gray: #9B9B9B;
+  --color-brand-cream: #FBF7F8;
+  --color-brand-dark: #1C0E14;
+  --color-brand-surface: #FFFFFF;
+
+  /* Typography */
+  --font-arabic: var(--font-cairo);
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px 0 rgba(123, 32, 72, 0.08);
+  --shadow-card-hover: 0 8px 40px 0 rgba(123, 32, 72, 0.16);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Root variables ── */
+:root {
+  --background: #FBF7F8;
+  --foreground: #1C0E14;
+}
+
+/* ── Base ── */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-cairo), 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── RTL utilities ── */
+[dir="rtl"] * {
+  letter-spacing: 0;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EDF1;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A8B6;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7B2048;
+}
+
+/* ── Selection ── */
+::selection {
+  background: #7B2048;
+  color: #fff;
+}
+
+/* ── Focus visible ── */
+:focus-visible {
+  outline: 2px solid #7B2048;
+  outline-offset: 2px;
 }
