@@ -43,7 +43,7 @@ export default function CTABanner() {
 
           <div className="mt-8 flex flex-col items-center gap-1 text-sm">
             <span dir="ltr" className="text-brand-rose/50">+971 52 272 9796</span>
-            <span dir="ltr" className="text-brand-rose/30 text-xs">+966 56 086 1010</span>
+            <span dir="ltr" className="text-brand-rose/50">+966 56 086 1010</span>
           </div>
         </motion.div>
       </div>
