@@ -57,6 +57,10 @@ export default function Footer() {
                   <span dir="ltr">+971 52 272 9796</span>
                 </a>
               </li>
+              <li className="text-sm text-brand-rose/40 flex items-center gap-2 pr-1">
+                <span>📱</span>
+                <span dir="ltr">+966 56 086 1010</span>
+              </li>
               <li className="text-sm text-brand-rose/70">
                 <span>📍</span>{" "}
                 <span className="mr-2">المويهات 2 - عجمان - الإمارات العربية المتحدة</span>
